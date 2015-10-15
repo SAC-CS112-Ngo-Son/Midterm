@@ -27,7 +27,7 @@ public class Q5
 			{
 				if (sGuess.equals("EVEN"))
 					iEven += 1;
-				
+
 				iWin += 1;
 				dPercentWin = iWin * 100.0 / iGames;
 				dPercentEven = iEven * 100.0 / iGames;
@@ -41,7 +41,7 @@ public class Q5
 			{
 				if (sGuess.equals("EVEN"))
 					iEven += 1;
-				
+
 				dPercentWin = iWin * 100.0 / iGames;
 				dPercentEven = iEven * 100.0 / iGames;
 
