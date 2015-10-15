@@ -22,6 +22,11 @@ public class Q4
 			iMod = iDice % 2;
 
 			sGuess = JOptionPane.showInputDialog("ODD or EVEN: ");
+			
+			while ((!sGuess.equals("ODD")) && (!sGuess.equals("EVEN")))
+			{
+				sGuess = JOptionPane.showInputDialog("Please enter again. ODD or EVEN: ");
+			}
 
 			if (((sGuess.equals("ODD") && (iMod == 1)) || ((sGuess.equals("EVEN") && (iMod == 0)))))
 			{

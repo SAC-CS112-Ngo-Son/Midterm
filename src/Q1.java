@@ -17,6 +17,11 @@ public class Q1
 		String sGuess;
 
 		sGuess = JOptionPane.showInputDialog("ODD or EVEN: ");
+		
+		while ((!sGuess.equals("ODD")) && (!sGuess.equals("EVEN")))
+		{
+			sGuess = JOptionPane.showInputDialog("Please enter again. ODD or EVEN: ");
+		}
 
 		if (((sGuess.equals("ODD") && (iMod == 1)) || ((sGuess.equals("EVEN") && (iMod == 0)))))
 			JOptionPane.showMessageDialog(null, String.format("You rolled %d. Your guess is correct.", iDice));
